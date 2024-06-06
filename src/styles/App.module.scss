@@ -1,0 +1,13 @@
+.appContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.calendar {
+  flex: 1;
+}
+
+.events {
+  flex: 1;
+}
