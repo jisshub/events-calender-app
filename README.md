@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```bash
 git clone https://github.com/jisshub/events-calender-app.git
 ```
+
 ## Available Scripts
 
 Navigate to the project directory. In the project directory, you can run:
