@@ -1,11 +1,13 @@
 .appContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 20px;
 }
 
 .calendar {
   flex: 1;
+  margin-left: 20px;
 }
 
 .events {
