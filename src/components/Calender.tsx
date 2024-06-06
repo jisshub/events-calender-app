@@ -8,9 +8,10 @@ import styles from '../styles/Calendar.module.scss';
 interface CalendarProps {
   selectedDate: Dayjs;
   onDateChange: (date: Dayjs) => void;
+  onMonthChange: (date: Dayjs) => void;
 }
 
-const Calendar: React.FC<CalendarProps> = ({ selectedDate, onDateChange }) => {
+const Calendar: React.FC<CalendarProps> = ({ selectedDate, onDateChange, onMonthChange }) => {
   return (
     <div className={styles.calendarContainer}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -18,6 +19,9 @@ const Calendar: React.FC<CalendarProps> = ({ selectedDate, onDateChange }) => {
           value={selectedDate}
           onChange={(newDate) => {
             if (newDate) onDateChange(newDate);
+          }}
+          onMonthChange={(newMonth) => {
+            if (newMonth) onMonthChange(newMonth);
           }}
         />
       </LocalizationProvider>
